@@ -15,4 +15,4 @@ def load():
 def save(tasks):
     """Write all tasks to tasks.json."""
     with open(FILE, "w") as f:
-        json.dump(tasks, f, sort_keys=True)
+        json.dump(tasks, f, indent=2, sort_keys=True)
