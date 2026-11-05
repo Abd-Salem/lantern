@@ -10,4 +10,11 @@ Lantern is a tiny command-line task tracker.
 
 Tasks are saved in `tasks.json` in the current folder.
 
+### list --done
+
+Shows only completed tasks.
+
+    lantern list --done
+
+
 ## Examples
