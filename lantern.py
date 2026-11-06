@@ -1,8 +1,12 @@
 import argparse
 import storage
+import export
 
 parser = argparse.ArgumentParser(prog='lantern')
 sub = parser.add_subparsers(dest='command')
+
+export_parser = sub.add_parser('export')
+export_parser.add_argument('--csv', action='store_true')
 
 add_parser = sub.add_parser('add')
 add_parser.add_argument('title')
@@ -22,5 +26,8 @@ elif args.command == 'list':
         print('No tasks yet.')
     for task in tasks:
         print(task['title'])
+elif args.command == 'export':
+    if args.csv:
+        export.export_csv(storage.load())
 else:
     parser.print_help()
