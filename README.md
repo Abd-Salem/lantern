@@ -6,3 +6,5 @@ Latern is a hands-on project where we practice Git version control and collabora
 |------|----------------|
 | mostafa | zlatanibrahimovichsweden-61 | 
 | Abdallah | Abd-Salem |
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for our branch, commit and pull request conventions.
